@@ -72,10 +72,8 @@ public class Client {
 
 	public void start() throws UnknownHostException, IOException {
 		/*scn = new Scanner(System.in);
-
 		System.out.println("please enter the 'Join(username)' command with the username that you want to use");
 		String usernameCommand = scn.nextLine();
-
 		while (!isValid(usernameCommand, 4)) {
 			System.out.println("You have entered a wrong command, please enter the 'Join(username)' command");
 			usernameCommand = scn.nextLine();
@@ -253,14 +251,15 @@ public class Client {
 		clientSend.setPreferredSize(new Dimension(440,50));
 		clientSend.setVisible(true);
 		clientSend.setFont(font1);
-		sendButton = new JButton();
-		//sendButton.setOpaque(false);
-		//sendButton.setContentAreaFilled(false);
-		//sendButton.setBorderPainted(false);
-		//sendButton.setVisible(true);
+		ImageIcon sendImage = new ImageIcon("Images/button3.png");
+		sendButton = new JButton(sendImage);
+		sendButton.setOpaque(false);
+		sendButton.setContentAreaFilled(false);
+		sendButton.setBorderPainted(false);
+		sendButton.setVisible(true);
 		sendButton.setVisible(true);
 		sendButton.setPreferredSize(new Dimension(90,50));
-		sendButton.setText("Send");
+		sendButton.setText("");
 		sendButton.setBackground(Color.GREEN);
 
 		top = new JPanel();
